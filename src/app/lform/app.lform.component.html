@@ -1,0 +1,22 @@
+<div class="bs-div text-left col-md-8 col-md-offset-2">
+  <h4 style="color:#cb2223;" class="text-center">Reg Form</h4>
+  <form>
+      <div class="form-group">
+        <span style="color:black">ID</span>
+        <input type="text" class="form-control" id="regid" required
+               [(ngModel)]="model.regid" name="id">
+      </div>
+
+      <div class = "form-group">
+        <span style="color:black">Name</span>
+        <input type="text" class="form-control" id = "name"
+               [(ngModel)] = "model.name" name = "name">
+      </div>
+    <a class="btn btn-success" (click)="saveReg()">Save</a>
+
+    <div style="margin-top: 10px; ">
+      <span *ngFor="let r of regArray;" style="color:black;">{{r}}</span>
+    </div>
+
+  </form>
+</div>
